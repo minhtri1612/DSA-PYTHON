@@ -19,9 +19,7 @@ def merge_sort(arr):
             else:
                 arr[k]=right_arr[j]
                 j+=1
-                k+=1
-
-            
+                k+=1     
         while i<len(left_arr):
             arr[k]=left_arr[i]
             i+=1
@@ -31,6 +29,5 @@ def merge_sort(arr):
             arr[k]=right_arr[j]
             j+=1
             k+=1
-
 merge_sort(arr)
 print(arr)    

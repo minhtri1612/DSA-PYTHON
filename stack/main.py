@@ -1,0 +1,10 @@
+data=[]
+data.append(4)
+print(data)
+data.append(3)
+data.append(2)
+data.append(5)
+print(data)
+element=data.pop()
+print(element)
+print(data)

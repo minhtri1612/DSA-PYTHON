@@ -1,3 +1,4 @@
+prices=[7,3,1,5,8,9,10,22,33]
 def best_total_price(prices, k):
     if len(prices) < k:
         return 0
@@ -7,10 +8,9 @@ def best_total_price(prices, k):
         total -= prices[i]
         total += prices[i + k]
         maxtotal = max(maxtotal, total)
-
     return maxtotal
-
-# Sliding Window Iterations:
+alo=best_total_price(prices,3)
+print(alo)
 
 # First Iteration (i = 0):
 # total -= prices[0] => total = 11 - 7 = 4

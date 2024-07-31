@@ -9,12 +9,12 @@ class BSTNode:
             return
         
         if data < self.data:
-            if self.left:
+            if self.left is not None :
                 self.left.add_child(data)
             else:
                 self.left = BSTNode(data)
         else:
-            if self.right:
+            if self.right is not None:
                 self.right.add_child(data)
             else:
                 self.right = BSTNode(data)   

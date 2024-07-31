@@ -23,4 +23,7 @@ test=stack.pop()
 alo=stack.peek()
 print(test)
 print(alo)
-
+for i in range(16):
+    if i%3==0:
+        stack.push(i)
+    print(stack)
